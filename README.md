@@ -1,1 +1,1 @@
-Just testing Code Igniter third-party with git submodule.
+Just testing Code Igniter third-party as a git submodule.
