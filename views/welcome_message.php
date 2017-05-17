@@ -68,16 +68,34 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <body>
 
 <div id="container">
-	<h1>Welcome to third-party-controller!</h1>
+	<h1>Third-Party SubModule</h1>
 
 	<div id="body">
-		<p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
+		<p>The page you are looking at is being generated dynamically with CodeIgniter using HMVC.</p>
+		
+		<h3>Hierarchical: Config</h3>
+		<p>Configuration items specific to this module can be found here:</p>
+		<code><?=$mpath?>/config/</code>
 
+		<h3>Hierarchical: Language</h3>
+ 		<p><?=$lang?>  Language files specific to the module can be found here:</p>
+ 		<code><?=$mpath?>/language/</code>
+
+
+		
+		
+		<h3>Model</h3>
+		<p>This string: <b><?=$model?></b> Is generated with the corresponding model for this page at:</p>
+		<code><?=$mpath?>/models/Example_model.php</code>
+				
+		<h3>View</h3>
 		<p>If you would like to edit this page you'll find it located at:</p>
-		<code>application/views/welcome_message.php</code>
+		<code><?=$mpath?>/views/welcome_message.php</code>
 
+		<h3>Controller</h3>
 		<p>The corresponding controller for this page is found at:</p>
-		<code>application/controllers/Welcome.php</code>
+		<code><?=$mpath?>/controllers/Welcome.php</code>
+
 
 		<p>If you are exploring CodeIgniter for the very first time, you should start by reading the <a href="user_guide/">User Guide</a>.</p>
 	</div>
