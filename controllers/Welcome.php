@@ -54,7 +54,7 @@ class Welcome extends CI_Controller {
         // Model
 		//$this->load->model('example_model', 'example');
 		//$this->load->helper('language');
-		$this->lang->load('example','japanese');
+		$this->lang->load('example','english');
 	}
 
 	/**
