@@ -70,5 +70,10 @@ class Welcome extends CI_Controller {
 		$data['mpath'] = 'application/modules/' . $this->router->fetch_module();
 
 		$this->load->view('welcome_message', $data);
+		
+		//$isEnabled = in_array('mod_rewrite', apache_get_modules());
+		//echo ($isEnabled) ? 'Enabled' : 'Not enabled';
+		$this->load->helper('url');
+		echo base_url();
 	}
 }
