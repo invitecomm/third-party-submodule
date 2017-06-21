@@ -55,6 +55,8 @@ class Welcome extends CI_Controller {
 		//$this->load->model('example_model', 'example');
 		//$this->load->helper('language');
 		$this->lang->load('example','japanese');
+		$this->config->load('modenv');
+
 	}
 
 	/**
@@ -68,7 +70,8 @@ class Welcome extends CI_Controller {
 		$data['model'] = $this->example->example();
 		$data['lang'] = $this->lang->line('sample');
 		$data['mpath'] = 'application/modules/' . $this->router->fetch_module();
-
-		$this->load->view('welcome_message', $data);
+		echo $this->config->item('path');
+		//echo 'hello' . $foo;
+		//$this->load->view('welcome_message', $data);
 	}
 }

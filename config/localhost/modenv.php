@@ -19,5 +19,5 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $config['path']	=	'module/ENV/config';
 $config['def']		=	FALSE;
 $config['defenv']		=	FALSE;
-$config['mod']		=	FALSE;s
+$config['mod']		=	FALSE;
 $config['modenv']		=	TRUE;
