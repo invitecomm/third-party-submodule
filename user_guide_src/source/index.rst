@@ -1,7 +1,11 @@
-######################
-CodeIgniter User Guide
-######################
+##################################
+CodeIgniter Third Party Sub-Module
+##################################
 
+- Requirements
+
+   - HMVC
+ 
 - :doc:`License Agreement <license>`
 - :doc:`Change Log <changelog>`
 
