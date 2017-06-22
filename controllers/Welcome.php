@@ -74,6 +74,8 @@ class Welcome extends CI_Controller {
 		//$isEnabled = in_array('mod_rewrite', apache_get_modules());
 		//echo ($isEnabled) ? 'Enabled' : 'Not enabled';
 		$this->load->helper('url');
-		echo base_url();
+		//echo base_url();
+		//echo current_url();
+		//echo BASEPATH;
 	}
 }
