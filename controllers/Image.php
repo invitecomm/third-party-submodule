@@ -38,7 +38,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * @version 1.0
  * @author Brian LaVallee <brian.lavallee@invite-comm.jp>
  */
-class Welcome extends CI_Controller {
+class Image extends CI_Controller {
 
     /**
      * CodeIgniter Application Controller Constructor - Constructors are 
@@ -50,6 +50,7 @@ class Welcome extends CI_Controller {
     function __construct()
     {
         parent::__construct();
+        $this->load->helper('html');
         		
         // Model
 		//$this->load->model('example_model', 'example');
@@ -65,15 +66,19 @@ class Welcome extends CI_Controller {
      */
 	public function index()
 	{
-		$data['model'] = $this->example->example();
-		$data['lang'] = $this->lang->line('sample');
-		$data['mpath'] = 'application/modules/' . $this->router->fetch_module();
+		//$data['model'] = $this->example->example();
+		//$data['lang'] = $this->lang->line('sample');
+		//$data['mpath'] = 'application/modules/' . $this->router->fetch_module();
 
-		$this->load->view('welcome_message', $data);
+		echo img('application/modules/tps/assets/img/sports.jpg');
+		echo img('application/modules/tps/assets/img/animal.jpg');
+#		echo img('assets/img/sports.jpg');
+#		echo img('assets/img/animal.jpg');
+		//$this->load->view('welcome_message', $data);
 		
 		//$isEnabled = in_array('mod_rewrite', apache_get_modules());
 		//echo ($isEnabled) ? 'Enabled' : 'Not enabled';
-		$this->load->helper('url');
+		//$this->load->helper('url');
 		//echo base_url();
 		//echo current_url();
 		//echo BASEPATH;
